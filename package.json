@@ -1,0 +1,28 @@
+{
+  "name": "nodejs_learning",
+  "version": "1.0.0",
+  "description": "NodeJs Learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhikumr7248/Node-JS_tutorial.git"
+  },
+  "keywords": [
+    "Node",
+    "by",
+    "US"
+  ],
+  "author": "ABHISHEK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhikumr7248/Node-JS_tutorial/issues"
+  },
+  "homepage": "https://github.com/abhikumr7248/Node-JS_tutorial#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
+  }
+}
