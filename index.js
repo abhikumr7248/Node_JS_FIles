@@ -7,12 +7,17 @@
 
 //console.warn("Try Abhi, bhumi");
 
-const http = require('http');
-const d = require('./data');
-http.createServer((req, resp) => {
-    resp.writeHead(200, { 'Content-Type': 'application\json' });
-    // resp.write(JSON.stringify({ name: 'Abhishek Kumar', email: 'abhikumar7248225833@gmail.com' }));
-    resp.write(JSON.stringify(d));
+// const http = require('http');
+// const d = require('./data');
+// http.createServer((req, resp) => {
+//     resp.writeHead(200, { 'Content-Type': 'application\json' });
+//     // resp.write(JSON.stringify({ name: 'Abhishek Kumar', email: 'abhikumar7248225833@gmail.com' }));
+//     resp.write(JSON.stringify(d));
 
-    resp.end();
-}).listen(5000);
+//     resp.end();
+// }).listen(5000);
+const gs = require('fs');
+const input = process.argv;
+gs.writeFileSync(input[2], input[3]);
+
+//console.log(process.argv[2]);
