@@ -18,6 +18,11 @@
 // }).listen(5000);
 const gs = require('fs');
 const input = process.argv;
-gs.writeFileSync(input[2], input[3]);
-
+if (input[2] == 'add') {
+    gs.writeFileSync(input[3], input[4]); //to add file
+} else if (input[2] == 'remove') {
+    gs.unlinkSync(input[3]); // to delete file.
+} else {
+    console.log("Invalid Input");
+}
 //console.log(process.argv[2]);
